@@ -11,7 +11,7 @@ const [students, setStudents] = useState([]);
 
 const loadStudents = async() =>{
 
-const response =await axios.get("http://localhost:5001/students");
+const response =await axios.get("https://first-server-1-vk1z.onrender.com/students");
 setStudents(response.data.data);
 
 

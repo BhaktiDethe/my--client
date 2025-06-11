@@ -13,7 +13,7 @@ function Add(){
 
     const addStudent = async() =>{
         try{
-      const response = await axios.post("http://localhost:5001/students",{
+      const response = await axios.post("https://first-server-1-vk1z.onrender.com/students",{
         id: student.id,
         name: student.name,
         city: student.city
