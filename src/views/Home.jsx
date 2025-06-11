@@ -12,10 +12,8 @@ const [students, setStudents] = useState([]);
 
 const loadStudents = async() =>{
 
-const response =await axios.get("https://first-server-1-vk1z.onrender.com/students");
+const response =await axios.get(`${import.meta.env.VITE_API_URL}/students`);
 setStudents(response.data.data);
-
-
 
 
 

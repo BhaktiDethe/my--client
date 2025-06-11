@@ -16,7 +16,8 @@ function Edit(){
 
     const editStudent= async() =>{
         try{
-      const response = await axios.put(`https://first-server-1-vk1z.onrender.com/students/${userId}`,
+      const response = await axios.put(
+        `${import.meta.env.VITE_API_URL}/students/${userId}`,
         {
         
         name: student.name,
@@ -41,7 +42,9 @@ function Edit(){
  const loadStudent = async ()=>{
 
 try{
-    const response = await axios.get(`https://first-server-1-vk1z.onrender.com/students/${userId}`);
+    const response = await axios.get(
+         `${import.meta.env.VITE_API_URL}/students/${userId}`
+        );
     setStudents(response.data.data);
 }
 catch(e){

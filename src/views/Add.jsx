@@ -13,7 +13,9 @@ function Add(){
 
     const addStudent = async() =>{
         try{
-      const response = await axios.post("https://first-server-1-vk1z.onrender.com/students",{
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/students`,
+        {
         id: student.id,
         name: student.name,
         city: student.city
