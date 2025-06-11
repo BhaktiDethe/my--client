@@ -5,7 +5,8 @@ import axios from "axios";
 import AddUserIcon from "./../assets/add-user-icon.png";
 import { Link } from "react-router";
 
-function Home(){
+function Home()
+{
 const [students, setStudents] = useState([]);
 
 
